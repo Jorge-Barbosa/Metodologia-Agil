@@ -1,0 +1,44 @@
+/* Estilos para o cabeçalho */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o formulário de cadastro */
+form {
+    background-color: #f2f2f2; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #3498db; /* Cor do botão */
+    color: #fff; /* Cor do texto no botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+}

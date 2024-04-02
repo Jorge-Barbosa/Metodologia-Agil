@@ -1,0 +1,30 @@
+.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 200px; /* Tamanho das imagens */
+    height: auto; /* Altura automática para manter a proporção */
+    border: 2px solid #3498db; /* Borda ao redor da imagem */
+    border-radius: 5px; /* Bordas arredondadas */
+}
