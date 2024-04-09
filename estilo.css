@@ -88,7 +88,7 @@ header {
 
 figure {
     display: inline-block;
-    margin: 10px;
+    margin: 80px;
     justify-content: space-between;
 }
 
@@ -107,7 +107,7 @@ figcaption a:hover {
 }
 
 img {
-    width: 200px; /* Tamanho das imagens */
+    width: 250px; /* Tamanho das imagens */
     height: auto; /* Altura automática para manter a proporção */
     border: 2px solid #3498db; /* Borda ao redor da imagem */
     border-radius: 5px; /* Bordas arredondadas */
