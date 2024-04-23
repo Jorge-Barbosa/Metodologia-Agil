@@ -1,5 +1,23 @@
 .gallery {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+    gap: 10px;
+    
+}
+
+.gallery figure {
+    margin: 0; /* Remova as margens padrão */
+}
+
+.gallery img {
+    width: 100%; /* As imagens ocupam toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Evita que as imagens ultrapassem a largura do contêiner */
+}
+
+#loadMoreButton {
+    display: none; /* Esconda o botão de "Carregar Mais" inicialmente */
 }
 
 figure {
@@ -23,8 +41,16 @@ figcaption a:hover {
 }
 
 img {
-    width: 200px; /* Tamanho das imagens */
+    width: 250px; /* Tamanho das imagens */
     height: auto; /* Altura automática para manter a proporção */
     border: 2px solid #3498db; /* Borda ao redor da imagem */
     border-radius: 5px; /* Bordas arredondadas */
 }
+
+h1{
+    text-align: center;
+}
+
+
+
+

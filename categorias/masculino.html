@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../estilo.css">
     <title>Document</title>
 </head>
@@ -29,10 +29,10 @@
     <nav>
         <ul>
             <li><a href="../index.html">Página Inicial</a></li>
-            <li><a href="categorias/masculino.html">Masculino</a></li>
-            <li><a href="categorias/feminino.html">Feminino</a></li>
-            <li><a href="categorias/infantil.html">Infantil</a></li>
-            <li><a href="categorias/acessorios.html">Acessórios</a></li>
+            <li><a href="masculino.html">Masculino</a></li>
+            <li><a href="feminino.html">Feminino</a></li>
+            <li><a href="infantil.html">Infantil</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
         </ul>
     </nav>
 
@@ -106,7 +106,10 @@
                 <a href="descricao.html" target="_blank">Camisa Masculina Flamengo</a>
             </figcaption>
         </figure>
+    
 
+        <br> <button id="loadMoreButton">Carregar Mais</button>
+    
         <figure>
             <img src="../IMG/camisa_galo.png" alt="Imagem 11">
             <figcaption>
@@ -177,8 +180,27 @@
                 <a href="descricao.html" target="_blank">Camisa Masculina Santoss</a>
             </figcaption>
         </figure>
-   
+
     </div>
+
+    <script class="carregarmais">
+        document.addEventListener("DOMContentLoaded", function () {
+            var loadMoreButton = document.getElementById("loadMoreButton");
+            var gallery = document.querySelector(".gallery");
+            var hiddenImages = document.querySelectorAll(".gallery figure:nth-child(n+11)");
+
+            hiddenImages.forEach(function (image) {
+                image.style.display = "none";
+            });
+
+            loadMoreButton.addEventListener("click", function () {
+                hiddenImages.forEach(function (image) {
+                    image.style.display = "inline-block";
+                });
+                loadMoreButton.style.display = "none";
+            });
+        });
+    </script>
 
 </body>
 

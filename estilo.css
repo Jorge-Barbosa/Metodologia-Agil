@@ -115,3 +115,20 @@ img {
 h1{
     text-align: center;
 }
+
+/* estilo.css */
+
+#loadMoreButton {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Adiciona um preenchimento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 35px;
+}
+
+#loadMoreButton:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}
