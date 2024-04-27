@@ -17,3 +17,25 @@ formularioCadastro.addEventListener('submit', function(event) {
     const informacoes = document.getElementById('informacoes');
     informacoes.innerHTML = mensagem;
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const camisas = document.querySelectorAll('.camisa');
+ 
+    camisas.forEach(camisa => {
+        camisa.addEventListener('click', (event) => {
+            event.stopPropagation(); // Impede a propagação do evento para os elementos pai
+            const info = camisa.querySelector('.info');
+            const outrasInfos = document.querySelectorAll('.info');
+            outrasInfos.forEach(outraInfo => {
+                if (outraInfo !== info) {
+                    outraInfo.style.display = 'none';
+                }
+            });
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    });
+});
