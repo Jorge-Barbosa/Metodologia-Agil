@@ -180,3 +180,50 @@ h1{
   .descricao button:hover {
     background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
   }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.camisas-grupo ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.camisas-grupo ul li {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.camisas-grupo figure {
+    margin: 0;
+    padding: 0;
+}
+
+.camisas-grupo img {
+    width: 100%;
+    height: auto;
+}
+
+.camisas-grupo figcaption {
+    text-align: center;
+}
+
+/* Media query para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    .camisas-grupo ul li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .camisas-grupo ul li {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}
