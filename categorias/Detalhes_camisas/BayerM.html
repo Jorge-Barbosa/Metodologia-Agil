@@ -34,8 +34,6 @@
         </ul>
     </nav>
  
- 
- 
     <div class="descricao">
         <img src="../../IMG/bayerM.png" alt="Imagem 1">
         <div class="info">
@@ -48,10 +46,30 @@
                 <li>Material: Poliéster</li>
                 <li>Tipo: Torcedor</li>
             </ol>
-            <button>Comprar</button>
-            <button>Adicionar ao Carrinho</button>
+            <button onclick="adicionarAoCarrinho()">Comprar</button>
+            <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
         </div>
     </div>
+
+    <script>
+        // Estrutura de dados para representar o carrinho (uma lista de objetos)
+        let carrinho = [];
+
+        function adicionarAoCarrinho() {
+            // Informações do produto
+            let produto = {
+                nome: "Camisa Bayern de Munique Away 23/24 s/n° Torcedor Adidas Masculina - Preto",
+                preco: 129.99, // Preço do produto (exemplo)
+                quantidade: 1 // Quantidade inicial
+            };
+
+            // Adiciona o produto ao carrinho
+            carrinho.push(produto);
+
+            // Exibe uma mensagem de confirmação
+            alert("Produto adicionado ao carrinho!");
+        }
+    </script>
 </body>
  
 </html>
