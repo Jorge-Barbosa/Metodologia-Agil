@@ -1,154 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="estilo.css">
-<script src="java.js" defer></script>
-<title>Barra de Navegação</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="java.js" defer></script>
+    <title>Barra de Navegação</title>
 </head>
+
 <body>
-        
-<header>
-    <div class="logo">
-        <img src="IMG/Logo.png" alt="Logo da Loja">
-    </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Pesquisar...">
-        <button type="submit">Buscar</button>
-    </div>
-    <div class="user-info">
-        <p>Olá, Jorge</p>
-    </div>
-    
-</header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Página Inicial</a></li>
-        <li><a href="categorias/masculino.html">Masculino</a></li>
-        <li><a href="categorias/feminino.html">Feminino</a></li>
-        <li><a href="categorias/infantil.html">Infantil</a></li>
-        <li><a href="categorias/acessorios.html">Acessórios</a></li>
-    </ul>
-</nav>
-<h1> Bem-vindo</h1>
-<p> A "JWC SPORTS", é um oásis para os entusiastas de todas as disciplinas atléticas. Esta loja não é apenas um local de transações comerciais; 
-    é um espaço onde a jornada do cliente é tão vital quanto o produto que ele adquire.</p>
+    <header>
+        <div class="logo">
+            <img src="IMG/Logo.png" alt="Logo da Loja">
+        </div>
+        <div class="search-bar">
+            <form action="onde_processar_pesquisa.php" method="GET">
+                <!-- trocar o que esta no action pela página onde você deseja processar a pesquisa.  -->
+                <input type="text" placeholder="Pesquisar..." name="pesquisa">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="user-info">
+            <p>Olá, Jorge</p>
+        </div>
 
-<div class="container paineis">
-    <section class="Produtos mais-vendidos">
-        <h2>Mais vendidos</h2>
-        <div class="camisas-grupo">
+    </header>
 
-    
+    <nav>
         <ul>
-            <li>
-                <a href="categorias/Detalhes_camisas/sp.html">
-                    <figure>
-                        <img src="img/saopauloM.png">
-                        <figcaption>Camisa São Paulo I 24/25 s/n° Jogador New Balance Masculina</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <!-- Adicione mais itens aqui, se necessário -->
-        
-        
-    
-
-            <li>
-                <a href="categorias/Detalhes_camisas/ajaxbranca.html">
-                    <figure>
-                        <img src="img/camisa_branca_ajax.png">
-                        <figcaption>Camisa Ajax Away 23/24 s/n° Torcedor Adidas Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/cruzeiro.html">
-                    <figure>
-                        <img src="img/camisa_cruz.png">
-                        <figcaption>Camisa Cruzeiro I 24/25 s/n° Torcedor Adidas Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/BayerM.html">
-                    <figure>
-                        <img src="img/bayerM.png">
-                        <figcaption>Camisa Bayern de Munique Away 23/24 s/n° Torcedor Adidas Masculina - Preto</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/fluminense.html">
-                    <figure>
-                        <img src="img/camisa_flum.png">
-                        <figcaption>Camisa Fluminense I 23/24 s/n° Torcedor Umbro Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/flamengo.html">
-                    <figure>
-                        <img src="img/camisa_fla.png">
-                        <figcaption>Camisa Flamengo II 24/25 s/n° Torcedor Adidas Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/realM.html">
-                    <figure>
-                        <img src="img/realM.png">
-                        <figcaption>Camisa Real Madrid Away 23/24 s/n° Torcedor Adidas Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/sp2.html">
-                    <figure>
-                        <img src="img/camisa2sp.png">
-                        <figcaption>Camisa São Paulo Jogo 2 New Balance Torcedor 2024 Oficial</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
-            <li>
-                <a href="categorias/Detalhes_camisas/roma.html">
-                    <figure>
-                        <img src="img/camisa_roma.png">
-                        <figcaption>Camisa Roma Home 23/24 s/n° Torcedor Adidas Masculina</figcaption>
-                    </figure>
-
-                </a>
-            </li>
-
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="categorias/masculino.html">Masculino</a></li>
+            <li><a href="categorias/feminino.html">Feminino</a></li>
+            <li><a href="categorias/infantil.html">Infantil</a></li>
+            <li><a href="categorias/acessorios.html">Acessórios</a></li>
         </ul>
+    </nav>
+    <h1> Bem-vindo</h1>
+    <p> A <strong>"JWC SPORTS"</strong>, é um oásis para os entusiastas de todas as disciplinas atléticas. Esta loja não
+        é apenas um
+        local de transações comerciais é um espaço onde a jornada do cliente é tão vital quanto o produto que ele
+        adquire.</p>
+
+    <div class="gallery">
+        <section class="Produtos mais-vendidos">
+            <h2>Mais vendidos</h2>
+            <div class="quebra">
+
+                <figure>
+                    <img src="img/saopauloM.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/sp.html">Camisa São Paulo I </a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/camisa_branca_ajax.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/ajaxbranca.html">Camisa Ajax II</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/camisa_cruz.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/cruzeiro.html">Camisa Cruzeiro I</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/bayerM.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/BayerM.html">Camisa Bayern de Munique II
+                        </a></figcaption>
+                </figure>
+
+
+
+                <figure>
+                    <img src="img/camisa_all.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/allhilall.html">Camisa Al-Hilal I</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/camisa_fla.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/flamengo.html">Camisa Flamengo II </a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/realM.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/realM.html">Camisa Real Madrid II</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/camisa2sp.png">
+                    <figcaption><a href="categorias/Detalhes_camisas/sp2.html">Camisa São Paulo II</a></figcaption>
+                </figure>
+
+
+            </div>
+        </section>
     </div>
-</div>
-
-    </section>
-
-</div> 
-
-
-
-
-
 
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+/*----------------------------- cabeçalho --------------------------*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +6,8 @@ body {
 }
 
 nav {
-    background-color: #3498db; /* Cor de fundo da barra */
+    background-color: #3498db;
+    /* Cor de fundo da barra */
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -14,13 +16,13 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Alteração aqui */
-    justify-content: space-between; /* Alteração aqui */
+    display: flex;
+    /* Alteração aqui */
+    justify-content: space-between;
+    /* Alteração aqui */
 }
 
-li {
-    /* Remova a propriedade 'float: left;' */
-}
+
 
 li a {
     display: block;
@@ -32,7 +34,8 @@ li a {
 }
 
 li a:hover {
-    background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+    background-color: #2980b9;
+    /* Cor de fundo ao passar o mouse */
 }
 
 header {
@@ -44,7 +47,8 @@ header {
 }
 
 .logo img {
-    width: 200px; /* ajuste conforme necessário */
+    width: 200px;
+    /* ajuste conforme necessário */
     padding-left: 35px;
 }
 
@@ -56,7 +60,8 @@ header {
 }
 
 .search-bar input[type="text"] {
-    width: 600px; /* ajuste conforme necessário */
+    width: 600px;
+    /* ajuste conforme necessário */
     padding: 15px;
     border: none;
     border-radius: 10px;
@@ -81,6 +86,7 @@ header {
     font-size: 20px;
 
 }
+/*----------------------------- cabeçalho --------------------------*/
 
 .gallery {
     text-align: center;
@@ -107,123 +113,122 @@ figcaption a:hover {
 }
 
 img {
-    width: 250px; /* Tamanho das imagens */
-    height: auto; /* Altura automática para manter a proporção */
-    border: 2px solid #3498db; /* Borda ao redor da imagem */
-    border-radius: 5px; /* Bordas arredondadas */
+    width: 250px;
+    /* Tamanho das imagens */
+    height: auto;
+    /* Altura automática para manter a proporção */
+    border: 2px solid #3498db;
+    /* Borda ao redor da imagem */
+    border-radius: 5px;
+    /* Bordas arredondadas */
 }
-h1{
+
+h1 {
     text-align: center;
 }
+
+p {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
 
 /* estilo.css */
 
 #loadMoreButton {
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Remove a borda */
-    padding: 10px 20px; /* Adiciona um preenchimento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor do mouse como ponteiro */
-    margin-top: 20px; /* Espaçamento superior */
+    background-color: #007bff;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    border: none;
+    /* Remove a borda */
+    padding: 10px 20px;
+    /* Adiciona um preenchimento interno */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor do mouse como ponteiro */
+    margin-top: 20px;
+    /* Espaçamento superior */
     margin-bottom: 35px;
 }
 
 #loadMoreButton:hover {
-    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+    background-color: #0056b3;
+    /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
 .descricao {
-    display: flex; /* Adiciona um layout flexível */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    margin-top: 50px; /* Ajuste conforme necessário */
+    display: flex;
+    /* Adiciona um layout flexível */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    margin-top: 50px;
+    /* Ajuste conforme necessário */
     margin-left: 20px;
-  }
-  
-  .descricao img {
-    width: 300px; /* Largura da imagem */
-    height: auto; /* Altura automática para manter a proporção */
-    margin-right: 20px; /* Espaçamento à direita da imagem */
-  }
-  
-  .descricao.info {
-    flex: 1; /* Ocupa o espaço restante */
-    display: flex; /* Adiciona um layout flexível */
-    flex-direction: column; /* Alinha os itens verticalmente */
-  }
-  
-  .descricao h2 {
-    margin-top: 0; /* Remove o espaçamento superior */
-  }
-  
-  .descricao ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px; /* Espaçamento superior */
-  }
-  
-  .descricao li {
-    margin-bottom: 10px; /* Espaçamento inferior */
-  }
-  
-  .descricao button {
-    padding: 10px 20px; /* Adiciona um preenchimento interno */
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor do mouse como ponteiro */
-    font-size: 16px; /* Tamanho da fonte */
-    margin-top: 20px; /* Espaçamento superior */
-  }
-  
-  .descricao button:hover {
-    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
-.camisas-grupo ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.camisas-grupo ul li {
-    display: inline-block;
-    width: calc(33.33% - 20px);
-    margin-right: 20px;
-    vertical-align: top;
-}
-
-.camisas-grupo figure {
-    margin: 0;
-    padding: 0;
-}
-
-.camisas-grupo img {
-    width: 100%;
+.descricao img {
+    width: 300px;
+    /* Largura da imagem */
     height: auto;
+    /* Altura automática para manter a proporção */
+    margin-right: 20px;
+    /* Espaçamento à direita da imagem */
 }
 
-.camisas-grupo figcaption {
-    text-align: center;
+.descricao.info {
+    flex: 1;
+    /* Ocupa o espaço restante */
+    display: flex;
+    /* Adiciona um layout flexível */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
 }
 
-/* Media query para ajustar o layout em telas menores */
-@media (max-width: 768px) {
-    .camisas-grupo ul li {
-        width: calc(50% - 20px);
-    }
+.descricao h2 {
+    margin-top: 0;
+    /* Remove o espaçamento superior */
 }
 
-@media (max-width: 480px) {
-    .camisas-grupo ul li {
-        width: calc(100% - 20px);
-        margin-right: 0;
-    }
+.descricao ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Espaçamento superior */
 }
+
+.descricao li {
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+.descricao button {
+    padding: 10px 20px;
+    /* Adiciona um preenchimento interno */
+    background-color: #007bff;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    border: none;
+    /* Remove a borda */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor do mouse como ponteiro */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    margin-top: 20px;
+    /* Espaçamento superior */
+}
+
+.descricao button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+
+/*-------------------------------------------------- Mais vendidos (pagina inicial) -------------------------------------*/
