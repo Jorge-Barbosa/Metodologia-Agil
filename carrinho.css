@@ -1,0 +1,64 @@
+.botao {
+    position: relative;
+    width: 110px; /* Alterado para 85px */
+    height: 35px; /* Mantido em 35px */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #3498db;
+    background-color: #3498db;
+  }
+  
+  .botao, .botao-icon, .botao-text {
+    transition: all 0.3s;
+  }
+  
+  .botao .botao-text {
+    position: absolute; /* Adicionado para posicionar o texto */
+    left: 5px; /* Posiciona o texto 10px a partir da esquerda */
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .botao .botao-icon {
+    position: absolute;
+    right: 0px; /* Atualizado de 69px para 0 para posicionar o ícone no canto direito */
+    height: 100%;
+    width: 35px; /* Mantido em 35px */
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.35em;
+  }
+  
+  .botao .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .botao:hover {
+    background: #3498db;
+    
+  }
+  
+  .botao:hover .botao-text {
+    color: transparent;
+    
+  }
+  
+  .botao:hover .botao-icon {
+    width: 100px; /* Atualizado de 98px para 85px */
+  }
+  
+  .botao:active .botao-icon {
+    background-color: #3498db;
+  }
+  
+  .botao:active {
+    border: 1px solid #3498db;
+  }
+
+
+  
+  

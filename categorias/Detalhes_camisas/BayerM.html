@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../../comprar.css">
+    <link rel="stylesheet" href="../../carrinho.css">
     <title>Descrição da Imagem</title>
 </head>
- 
+
 <body>
- 
+
     <header>
         <div class="logo">
             <img src="../../IMG/logo.png" alt="Logo da Loja">
@@ -21,9 +23,9 @@
         <div class="user-info">
             <p>Olá, Jorge</p>
         </div>
- 
+
     </header>
- 
+
     <nav>
         <ul>
             <li><a href="../../index.html">Página Inicial</a></li>
@@ -33,7 +35,7 @@
             <li><a href="../acessorios.html">Acessórios</a></li>
         </ul>
     </nav>
- 
+
     <div class="descricao">
         <img src="../../IMG/bayerM.png" alt="Imagem 1">
         <div class="info">
@@ -46,30 +48,45 @@
                 <li>Material: Poliéster</li>
                 <li>Tipo: Torcedor</li>
             </ol>
-            <button onclick="adicionarAoCarrinho()">Comprar</button>
-            <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+
+            
+        
+            <button class="button">
+                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                 <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                 <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+               </svg>
+                 <p class="text">Comprar</p>
+               </button>
+
+
+            <button type="type" class="botao">
+                <span class="botao-text">Adicionar</span>
+                <span class="botao-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
+                        height="24" fill="none" class="svg">
+                        <line y2="19" y1="5" x2="12" x1="12"></line>
+                        <line y2="12" y1="12" x2="19" x1="5"></line>
+                    </svg></span>
+            </button>
+
+
+
+           
+            
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 
-    <script>
-        // Estrutura de dados para representar o carrinho (uma lista de objetos)
-        let carrinho = [];
 
-        function adicionarAoCarrinho() {
-            // Informações do produto
-            let produto = {
-                nome: "Camisa Bayern de Munique Away 23/24 s/n° Torcedor Adidas Masculina - Preto",
-                preco: 129.99, // Preço do produto (exemplo)
-                quantidade: 1 // Quantidade inicial
-            };
-
-            // Adiciona o produto ao carrinho
-            carrinho.push(produto);
-
-            // Exibe uma mensagem de confirmação
-            alert("Produto adicionado ao carrinho!");
-        }
-    </script>
 </body>
- 
+
 </html>

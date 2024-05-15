@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../filtro.css">
     <link rel="stylesheet" href="../estilo.css">
     <title>Masculino</title>
 </head>
@@ -36,22 +36,25 @@
         </ul>
     </nav>
 
+    <iframe src="../filtro.html" style="border: none; width: 100%;"></iframe>
+
     <div class="gallery">
-        <figure>
+        <figure data-categoria="tenis" data-tamanho="m">
             <img src="../IMG/bayerM.png" alt="Imagem 1">
             <figcaption>
-                <a href="/categorias/Detalhes_camisas/BayerM.html" target="_blank">Camisa Masculina FC Bayern München </a>
+                <a href="/categorias/Detalhes_camisas/BayerM.html" target="_blank">Camisa Masculina FC Bayern München
+                </a>
             </figcaption>
         </figure>
 
-        <figure>
+        <figure data-categoria="tenis" data-tamanho="m">
             <img src="../IMG/juventosM.png" alt="Imagem 2">
             <figcaption>
                 <a href="/categorias/Detalhes_camisas/juventos.html" target="_blank">Camisa Masculina Juventus</a>
             </figcaption>
         </figure>
 
-        <figure>
+        <figure data-categoria="tenis" data-tamanho="m">
             <img src="../IMG/realM.png" alt="Imagem 3">
             <figcaption>
                 <a href="/categorias/Detalhes_camisas/realM.html" target="_blank">Camisa Masculina Real Madrid</a>
@@ -106,10 +109,9 @@
                 <a href="/categorias/Detalhes_camisas/flamengo.html" target="_blank">Camisa Masculina Flamengo</a>
             </figcaption>
         </figure>
-    
 
         <br> <button id="loadMoreButton">Carregar Mais</button>
-    
+
         <figure>
             <img src="../IMG/camisa_galo.png" alt="Imagem 11">
             <figcaption>
@@ -120,7 +122,8 @@
         <figure>
             <img src="../IMG/camisa_mnunit.png" alt="Imagem 12">
             <figcaption>
-                <a href="/categorias/Detalhes_camisas/mnunit.html" target="_blank">Camisa Masculina Manchester United</a>
+                <a href="/categorias/Detalhes_camisas/mnunit.html" target="_blank">Camisa Masculina Manchester
+                    United</a>
             </figcaption>
         </figure>
 
@@ -188,11 +191,11 @@
             var loadMoreButton = document.getElementById("loadMoreButton");
             var gallery = document.querySelector(".gallery");
             var hiddenImages = document.querySelectorAll(".gallery figure:nth-child(n+11)");
-
+    
             hiddenImages.forEach(function (image) {
                 image.style.display = "none";
             });
-
+    
             loadMoreButton.addEventListener("click", function () {
                 hiddenImages.forEach(function (image) {
                     image.style.display = "inline-block";
@@ -201,7 +204,7 @@
             });
         });
     </script>
-
+    
 </body>
 
 </html>
