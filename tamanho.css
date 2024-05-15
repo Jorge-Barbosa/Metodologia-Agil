@@ -1,0 +1,27 @@
+.card {
+    --primary: #000000;
+    --light: #ffffff;
+    --zinc-800: #3498db;
+}
+
+.item-list-button:focus {
+    background-color: var(--primary);
+
+    border: 2px solid var(--primary-shadow);
+
+    box-shadow: inset 0px 1px 4px var(--primary-shadow);
+
+    margin-right: 1px;
+}
+
+.list-size .item-list-button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.75rem;
+    color: var(--light);
+  
+    border: 2px solid var(--zinc-800);
+    border-radius: 0.25rem;
+  
+    transition: all 0.3s ease-in-out;
+  }
