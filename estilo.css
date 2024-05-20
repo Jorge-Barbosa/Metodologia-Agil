@@ -1,91 +1,5 @@
 /*----------------------------- cabeçalho --------------------------*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-nav {
-    background-color: #3498db;
-    /* Cor de fundo da barra */
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* Alteração aqui */
-    justify-content: space-between;
-    /* Alteração aqui */
-}
-
-
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-li a:hover {
-    background-color: #2980b9;
-    /* Cor de fundo ao passar o mouse */
-}
-
-header {
-    background-color: #3498db;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.logo img {
-    width: 200px;
-    /* ajuste conforme necessário */
-    padding-left: 35px;
-}
-
-.search-bar {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 60px;
-    padding-right: 30px;
-}
-
-.search-bar input[type="text"] {
-    width: 600px;
-    /* ajuste conforme necessário */
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.search-bar button {
-    padding: 15px 15px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    width: 90px;
-}
-
-.user-info {
-    text-align: right;
-    color: white;
-    padding-right: 50px;
-    font-size: 20px;
-
-}
 /*----------------------------- cabeçalho --------------------------*/
 
 .gallery {
@@ -115,45 +29,21 @@ figcaption a:hover {
 img {
     width: 250px;
     /* Tamanho das imagens */
-    height: auto;
-    /* Altura automática para manter a proporção */
-    border: 2px solid #3498db;
-    /* Borda ao redor da imagem */
-    border-radius: 5px;
-    /* Bordas arredondadas */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 h1 {
     text-align: center;
 }
 
-p {
+h2 {
+    margin-top: 80px;
     text-align: center;
 }
 
-h2 {
-    margin-top: 80px;
-}
-
-
-/* estilo.css */
-
-#loadMoreButton {
-    background-color: #007bff;
-    /* Cor de fundo azul */
-    color: #fff;
-    /* Cor do texto branco */
-    border: none;
-    /* Remove a borda */
-    padding: 10px 20px;
-    /* Adiciona um preenchimento interno */
-    font-size: 16px;
-    /* Tamanho da fonte */
-    cursor: pointer;
-    /* Cursor do mouse como ponteiro */
-    margin-top: 20px;
-    /* Espaçamento superior */
-    margin-bottom: 35px;
+.mais-vendidos {
+    text-align: center;
 }
 
 #loadMoreButton:hover {
@@ -162,73 +52,81 @@ h2 {
 }
 
 .descricao {
-    display: flex;
-    /* Adiciona um layout flexível */
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
-    margin-top: 50px;
-    /* Ajuste conforme necessário */
-    margin-left: 20px;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-left: 20px; /* Ajuste conforme necessário */
 }
 
-.descricao img {
-    width: 300px;
-    /* Largura da imagem */
-    height: auto;
-    /* Altura automática para manter a proporção */
-    margin-right: 20px;
-    /* Espaçamento à direita da imagem */
+ol {
+    margin-top: 10px;
 }
 
 .descricao.info {
-    flex: 1;
-    /* Ocupa o espaço restante */
-    display: flex;
-    /* Adiciona um layout flexível */
-    flex-direction: column;
-    /* Alinha os itens verticalmente */
+    display: flex; /* Adiciona um layout flexível */
+    flex-direction: column; /* Alinha os itens verticalmente */
 }
 
 .descricao h2 {
-    margin-top: 0;
-    /* Remove o espaçamento superior */
+    margin-top: 0; /* Remove o espaçamento superior */
 }
 
 .descricao ol {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
-    /* Espaçamento superior */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
 .descricao li {
-    margin-bottom: 10px;
-    /* Espaçamento inferior */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    margin-left: 0px;
 }
 
 .descricao button {
-    padding: 10px 20px;
-    /* Adiciona um preenchimento interno */
-    background-color: #007bff;
-    /* Cor de fundo azul */
-    color: #fff;
-    /* Cor do texto branco */
-    border: none;
-    /* Remove a borda */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    cursor: pointer;
-    /* Cursor do mouse como ponteiro */
-    font-size: 16px;
-    /* Tamanho da fonte */
-    margin-top: 20px;
-    /* Espaçamento superior */
+    padding: 10px 20px; /* Adiciona um preenchimento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-top: 20px; /* Espaçamento superior */
 }
 
 .descricao button:hover {
-    background-color: #0056b3;
-    /* Cor de fundo azul mais escura ao passar o mouse */
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
+.titulo {
+    line-height: 1.75rem;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: none;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin-right: 30px;
+}
 
+.produto-container {
+    display: flex;
+    flex-wrap: wrap; /* Para ajustar em telas menores */
+    gap: 20px; /* Espaçamento entre o slider e a descrição */
+    margin: 20px;
+}
 
+.slider {
+    flex: 1 1 50%; /* Ajuste a proporção conforme necessário */
+    max-width: 50%;
+}
+
+.descricao {
+    flex: 1 1 50%; /* Ajuste a proporção conforme necessário */
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .produto-container {
+        flex-direction: column;
+    }
+
+    .slider, .descricao {
+        max-width: 100%;
+    }
+}
