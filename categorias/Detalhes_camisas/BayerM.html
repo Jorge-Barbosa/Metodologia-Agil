@@ -67,32 +67,21 @@
 
 
 
-                <h3>Tamanhos</h3>
-                <div class="tamanhos">
-                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(0)">PP</button>
-                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(1)">P</button>
-                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(2)">M</button>
-                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(3)">G</button>
-                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(4)">GG</button>
+                <h3>Tamanho:</h3>
+                <div id="selectedSize" class="tamanhos">
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(0, 'PP')">PP</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(1, 'P')">P</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(2, 'M')">M</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(3, 'G')">G</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(4, 'GG')">GG</button>
                 </div>
 
-                <script>
-                    function selecionarTamanho(indice) {
-                        // Remove a classe 'clicked' de todos os botões de tamanho
-                        const botoesTamanho = document.querySelectorAll('.btn-tamanho');
-                        botoesTamanho.forEach(function (btn) {
-                            btn.classList.remove('clicked');
-                        });
-
-                        // Adiciona a classe 'clicked' apenas ao botão clicado
-                        botoesTamanho[indice].classList.add('clicked');
-                    }
-                </script>
+                
 
 
 
                 <div>
-                    <button class="button">
+                    <button id="comprarButton" class="button">
                         <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
                             xmlns="http://www.w3.org/2000/svg" fill="#fff">
                             <path
@@ -170,6 +159,8 @@
 
 
         </div>
+
+       
 
         <script src="../../script.js"></script>
 
