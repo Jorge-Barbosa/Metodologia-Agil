@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../../carrinho.css">
     <link rel="stylesheet" href="../../tamanho.css">
     <link rel="stylesheet" href="../../carrossel.css">
+    <link rel="stylesheet" href="../../sacola.css">
+    <script src="../../saudacao.js" defer></script>
+    <script src="../../cadastro.js" defer></script>
     <title>Descrição da Imagem</title>
 </head>
 
@@ -24,8 +27,16 @@
             <button type="submit">Buscar</button>
         </div>
         <div class="user-info">
-            <p>Olá, Jorge</p>
+            <p id="saudacao"></p>
         </div>
+
+        <button id="sacola" data-quantity="0" class="btn-cart">
+            <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+              <title>icon-cart</title>
+              <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+            </svg>
+            <span class="quantity"></span>
+          </button>
 
     </header>
 
@@ -95,7 +106,7 @@
                     </button>
 
 
-                    <button type="type" class="botao">
+                    <button id="adicionarButton" class="botao">
                         <span class="botao-text">Adicionar</span>
                         <span class="botao-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
                                 stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
@@ -104,6 +115,11 @@
                                 <line y2="12" y1="12" x2="19" x1="5"></line>
                             </svg></span>
                     </button>
+
+                    <button id="zerarSacola" class="botao">
+                    <span class="botao-text">Zerar Sacola</span>
+                </button>
+
                 </div>
             </div>
         </div>

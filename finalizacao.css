@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1eaf9;
+    
+}
+
+nav {
+    background-color: #3498db;
+    /* Cor de fundo da barra */
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Alteração aqui */
+    justify-content: space-between;
+    /* Alteração aqui */
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #2980b9;
+    /* Cor de fundo ao passar o mouse */
+}
+
+header {
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 200px;
+    /* ajuste conforme necessário */
+    padding-left: 35px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 60px;
+    padding-right: 30px;
+}
+
+.search-bar input[type="text"] {
+    width: 600px;
+    /* ajuste conforme necessário */
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.search-bar button {
+    padding: 15px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 90px;
+}
+
+.user-info {
+    text-align: right;
+    color: white;
+    padding-right: 50px;
+    font-size: 20px;
+
+}
+
+h2{
+    text-align: left;
+}
+
+p{
+  text-size-adjust: 150px;
+}
