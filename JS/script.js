@@ -65,6 +65,8 @@ document.getElementById('zerarSacola').addEventListener('click', zerarSacola);
 const produtoImagemSrc = '../../IMG/bayerM.png'; // Caminho da imagem do produto
 const produtoValor = 'R$ 399,00'; // Valor do produto
 
+
+
 // Armazena no localStorage
 localStorage.setItem('produtoImagem', produtoImagemSrc);
 localStorage.setItem('produtoValor', produtoValor);

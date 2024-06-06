@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../CSS/carrinho.css">
     <link rel="stylesheet" href="../CSS/tamanho.css">
     <link rel="stylesheet" href="../CSS/cabecalho.css">
+    <link rel="stylesheet" href="../CSS/carrossel.css">
+    <link rel="stylesheet" href="../CSS/sacola.css">
+    <script src="../JS/saudacao.js" defer></script>
+    <script src="../JS/cadastro.js" defer></script>
     <title>Descrição da Imagem</title>
 </head>
 
@@ -23,8 +27,16 @@
             <button type="submit">Buscar</button>
         </div>
         <div class="user-info">
-            <p>Olá, Jorge</p>
+            <p id="saudacao"></p>
         </div>
+
+        <button id="sacola" data-quantity="0" class="btn-cart">
+            <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+              <title>icon-cart</title>
+              <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+            </svg>
+            <span class="quantity"></span>
+          </button>
 
     </header>
 
@@ -40,70 +52,129 @@
 
 
 
+    <section class="titulo">
+        <h1>Camisa São Paulo I 24/25 s/n° Jogador New Balance Masculina</h1>
+    </section>
+
     <div class="descricao">
-        <img src="../../IMG/saopauloM.png" alt="Imagem 1">
         <div class="info">
-            <h2>Camisa São Paulo I 24/25 s/n° Jogador New Balance Masculina</h2>
+
+            <h1> R$ 399,00</h1>
+
             <ol>
-                <li>Gênero: Masculino</li>
-                <li>Indicado para: Jogo</li>
-                <li>Clube: Nacional</li>
-                <li>Time: São Paulo SP</li>
-                <li>Gola: Polo</li>
-                <li>Material: Poliéster</li>
-                <li>Manga: Manga Curta</li>
+                <li> <strong>Gênero: Masculino</strong></li>
+                <li><strong>Indicado para:</strong> Jogo</li>
+                <li><strong>Clube:</strong>  Nacional</li>
+                <li><strong>Time:</strong> São Paulo SP</li>
+                <li><strong>Gola:</strong>  Polo</li>
+                <li><strong>Material:</strong> Poliéster</li>
+                <li><strong>Tipo:</strong> Manga Curta</li>
             </ol>
-            <h3>Tamanhos</h3>
-            <div class="tamanhos">
-                <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(0)">PP</button>
-                <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(1)">P</button>
-                <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(2)">M</button>
-                <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(3)">G</button>
-                <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(4)">GG</button>
-            </div>
-
-            <script>
-                function selecionarTamanho(indice) {
-                    // Remove a classe 'clicked' de todos os botões de tamanho
-                    const botoesTamanho = document.querySelectorAll('.btn-tamanho');
-                    botoesTamanho.forEach(function (btn) {
-                        btn.classList.remove('clicked');
-                    });
-
-                    // Adiciona a classe 'clicked' apenas ao botão clicado
-                    botoesTamanho[indice].classList.add('clicked');
-                }
-            </script>
 
 
-
-            <div>
-                <button class="button">
-                    <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
-                        xmlns="http://www.w3.org/2000/svg" fill="#fff">
-                        <path
-                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
-                        </path>
-                        <path
-                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
-                        </path>
-                    </svg>
-                    <p class="text">Comprar</p>
-                </button>
+           <h3>Tamanho:</h3>
+                <div id="selectedSize" class="tamanhos">
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(0, 'PP')">PP</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(1, 'P')">P</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(2, 'M')">M</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(3, 'G')">G</button>
+                    <button class="tamanho-btn btn-tamanho" onclick="selecionarTamanho(4, 'GG')">GG</button>
+                </div>
 
 
-                <button type="type" class="botao">
-                    <span class="botao-text">Adicionar</span>
-                    <span class="botao-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
-                            height="24" fill="none" class="svg">
-                            <line y2="19" y1="5" x2="12" x1="12"></line>
-                            <line y2="12" y1="12" x2="19" x1="5"></line>
-                        </svg></span>
-                </button>
+                <div>
+                    <button id="comprarButton" class="button">
+                        <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24"
+                            xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                            </path>
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                            </path>
+                        </svg>
+                        <p class="text">Comprar</p>
+                    </button>
+
+
+                    <button id="adicionarButton" class="botao">
+                        <span class="botao-text">Adicionar</span>
+                        <span class="botao-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                                stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
+                                height="24" fill="none" class="svg">
+                                <line y2="19" y1="5" x2="12" x1="12"></line>
+                                <line y2="12" y1="12" x2="19" x1="5"></line>
+                            </svg></span>
+                    </button>
+
+                    <button id="zerarSacola" class="botao">
+                        <span class="botao-text">Zerar Sacola</span>
+                    </button>
+    
+                    </div>
+
+                    
             </div>
         </div>
     </div>
+
+    <div class="slider">
+
+        <div class="slides">
+            <!--Radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--fim Radio buttons-->
+
+            <!--slide imagens-->
+            <div class="slide first">
+                <img src="../IMG/saopauloM.png" alt="imagem1">
+            </div>
+
+            <div class="slide">
+                <img src="../IMG/sp2.png" alt="imagem2">
+            </div>
+
+            <div class="slide">
+                <img src="../IMG/sp3.png" alt="imagem3">
+            </div>
+
+            <div class="slide">
+                <img src="../IMG/sp4.png" alt="imagem4">
+            </div>
+
+            <!--fim slide imagens-->
+
+              <!--navegacao-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+
+
+    </div>
+
+   
+
+    <script src="../JS/script.js"></script>
+
 </body>
+
 
 </html>
